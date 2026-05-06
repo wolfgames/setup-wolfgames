@@ -19,9 +19,6 @@ if ! command -v gh &>/dev/null; then
   esac
 fi
 
-# Restore terminal stdin so gh auth can prompt interactively when piped via curl | bash
-exec < /dev/tty
-
 # Authenticate with required scope
 if gh auth status --hostname github.com &>/dev/null; then
   gh auth refresh --hostname github.com --scopes "read:packages"
