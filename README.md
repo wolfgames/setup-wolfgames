@@ -10,7 +10,7 @@ Configures your local environment to install private `@wolfgames` npm packages.
 ## Usage
 
 ```bash
-bash <(curl -fsSL https://raw.githubusercontent.com/wolfgames/install/main/setup.sh)
+bash <(curl -fsSL https://raw.githubusercontent.com/wolfgames/setup-wolfgames/main/setup.sh)
 ```
 
 You'll be prompted to authenticate with GitHub. Once complete, you can install `@wolfgames` packages normally via npm/bun/yarn.
